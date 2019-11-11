@@ -1,0 +1,75 @@
+body {
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+* {
+	/* box-sizing spune ce sa luam in considerare la 
+	width si height al elementului.Adica,pe care sa se 
+	aplice :content,padding,border; */
+	box-sizing: border-box;
+	margin: 0;
+}
+.container {
+	
+}
+.header {
+	height: 10vh;
+	background-color: #202c45;
+	display: flex; 
+	justify-content: center;
+}
+.main {
+	height: 90vh;
+	background-image: url(../img/oradea.jpg);
+	background-size: cover;
+	background-position: center center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.header img {
+	/* apeleaza doar imaginile care au un parinte cu clasa header */
+	height: 8vh;
+	margin: 0 auto;
+	display: block;
+}
+.middle {
+	max-width: 720px;
+	text-align: center;
+}
+h1 {
+	font-size: 100px;
+	-webkit-text-stroke-width: 2px;
+   -webkit-text-stroke-color: white;
+   background: url(images/oradea.jpg) no-repeat;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+p {
+	font-size: 50px;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: white;
+	 background: url(images/oradea.jpg) no-repeat;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+.middle p {
+	font-size: 14px;
+	margin: 2vh 0;
+}
+.middle a {
+	text-decoration: none;
+	display: inline-block;
+	background-color: #202c45;
+	border: 1px solid #202c45;
+	color: #ffffff;
+	padding: 7px 25px;
+	border-radius: 7px;
+	transition: all 0.3s;
+
+}
+.middle a:hover {
+	background-color: transparent;
+	color: #202c45;
+}
